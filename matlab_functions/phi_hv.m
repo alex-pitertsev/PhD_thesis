@@ -1,0 +1,9 @@
+function z=phi_hv(alpha,delta,phi,teta)
+% эта функция задает формулу 2.53 главы 2 диссертации
+
+z=(0.5.*sin(2.*phi).*((sin(delta).^2).*(sin(alpha).^2)-(sin(delta).^2).*...
+ (cos(alpha).^2).*(sin(teta).^2)-(cos(delta).^2)-sin(2.*delta).*...
+  cos(alpha).*sin(2.*teta))-0.5.*cos(2.*phi).*((sin(2.*alpha).*...
+ (sin(delta).^2).*sin(teta)-sin(2.*delta).*sin(alpha).*cos(teta))));
+
+end
